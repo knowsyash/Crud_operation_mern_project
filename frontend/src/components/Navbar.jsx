@@ -38,12 +38,6 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             </li>
           </ul>
           
-          <button 
-            className="btn btn-sm btn-secondary"
-            onClick={toggleDarkMode}
-          >
-            {darkMode ? '☀️' : '🌙'}
-          </button>
         </div>
       </div>
     </nav>
