@@ -13,6 +13,14 @@ const userDataSchema = new mongoose.Schema(
             },
             age :{
                 type :Number 
+            },
+            department :{
+                type:String,
+                default: "General"
+            },
+            position :{
+                type:String,
+                default: "Employee"
             }
     },
     {timestamps:true}

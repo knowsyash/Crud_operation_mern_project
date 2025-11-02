@@ -23,13 +23,15 @@ app.use((req, res, next) => {
 });
 
 app.post("/",async(req,res)=>{
-    const {name,age,email}=req.body; //name = req.body.name
+    const {name,age,email,department,position}=req.body;
     
     try{
     const Useradd = await User.create({
         name:name,
         email:email,
         age:age,
+        department:department,
+        position:position
     })
     res.status(201).json(Useradd)   
 }catch(error){
@@ -72,8 +74,8 @@ app.delete("/:id",async(req,res)=>{
     
 })
 app.patch("/:id",async(req,res)=>{
-    const {id} = req.params; //from url
-    const {name,email,age} = req.body;
+    const {id} = req.params;
+    const {name,email,age,department,position} = req.body;
     try{
     const updateUser = await User.findByIdAndUpdate(id,req.body,{new:true}); 
     res.status(200).json(updateUser);

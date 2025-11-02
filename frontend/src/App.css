@@ -1,0 +1,162 @@
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --success: #059669;
+  --danger: #dc2626;
+  --bg-dark: #0f172a;
+  --bg-card: #1e293b;
+  --border: #334155;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+}
+
+.App {
+  min-height: 100vh;
+  background: #0f172a;
+}
+
+.App.dark-mode {
+  background: #0f172a;
+  color: #f1f5f9;
+}
+
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: #475569;
+}
+
+.card-title {
+  color: #f1f5f9;
+}
+
+.card-body {
+  color: #f1f5f9;
+}
+
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+
+.btn-primary {
+  background: #2563eb;
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-success {
+  background: #059669;
+  border: none;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #047857;
+}
+
+.btn-danger {
+  background: #dc2626;
+  border: none;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #b91c1c;
+}
+
+.btn-secondary {
+  background: #475569;
+  border: none;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #334155;
+}
+
+.form-control {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #f1f5f9;
+  padding: 10px 12px;
+}
+
+.form-control:focus {
+  background: #0f172a;
+  border-color: #2563eb;
+  color: #f1f5f9;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-control::placeholder {
+  color: #64748b;
+}
+
+.form-label {
+  color: #e2e8f0;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.alert {
+  border-radius: 6px;
+  border: 1px solid;
+}
+
+.alert-danger {
+  background: rgba(220, 38, 38, 0.1);
+  border-color: #dc2626;
+  color: #fca5a5;
+}
+
+.alert-success {
+  background: rgba(5, 150, 105, 0.1);
+  border-color: #059669;
+  color: #6ee7b7;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 14px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #f1f5f9;
+}
+
+.search-input:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.search-input::placeholder {
+  color: #64748b;
+}
+
+.text-muted {
+  color: #94a3b8 !important;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #f1f5f9;
+}
+
+.badge {
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
