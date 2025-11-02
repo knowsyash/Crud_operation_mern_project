@@ -11,7 +11,7 @@ export default function Read({ darkMode }) {
   async function getData() {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:5000');
+      const response = await fetch(`${process.env.REACT_APP_API_URL}`);
       const result = await response.json();
 
       if (!response.ok) {
@@ -34,7 +34,7 @@ export default function Read({ darkMode }) {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/${id}`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/${id}`, {
         method: 'DELETE',
       });
 

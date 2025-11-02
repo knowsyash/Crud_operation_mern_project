@@ -18,7 +18,7 @@ export default function Update({ darkMode }) {
     const getSingleUser = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`http://localhost:5000/${id}`);
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/${id}`);
         const result = await response.json();
 
         if (!response.ok) {
@@ -55,7 +55,7 @@ export default function Update({ darkMode }) {
     };
     
     try {
-      const response = await fetch(`http://localhost:5000/${id}`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/${id}`, {
         method: "PATCH",
         body: JSON.stringify(updatedUser),
         headers: { "Content-Type": "application/json" },
